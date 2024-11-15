@@ -1,0 +1,274 @@
+body {
+  background-color: #2d8cda; 
+
+
+  font-family: Arial, sans-serif; 
+  text-align: center; 
+  background-color: #f1f1f1; 
+  padding: 20px; 
+  font-family: ' Rubik',sans-serif;
+
+}
+
+
+
+
+
+/*Inicio del header */
+
+
+
+.header {
+  position: relative;
+  background-color: #5a9ecc;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header h1 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+}
+
+
+.header nav ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+.header nav ul li {
+  margin: 0;
+  padding: 0;
+}
+.header nav a {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.header nav a:hover {
+  background-color: #04305f;
+}
+
+
+/*Fin del header */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Inicio del Menu */
+
+
+
+.menu {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  width: fit-content;
+  display: flex;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.menu .link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 36px;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a3cff; /* Fondo del botón */
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .link svg {
+  width: 24px;
+  height: 24px;
+  fill: #000000;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .item {
+  position: relative;
+}
+
+.menu .item .submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea elementos del submenu a la izquierda */
+  position: absolute;
+  top: 100%;
+  left: 0; /* Ajusta el submenú para alinearlo hacia la izquierda */
+  border-radius: 0 0 16px 16px;
+  width: max-content;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  background-color: #5a9ecc; /* Fondo sólido para el submenú */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-12px);
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+  pointer-events: none;
+  list-style: none;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.menu .item:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+  border-top: transparent;
+  border-color: #5d74cf;
+}
+
+.menu .item:hover .link {
+  color: #ffffff;
+  border-radius: 16px 16px 0 0;
+}
+
+.menu .item:hover .link::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.menu .item:hover .link svg {
+  fill: #ffffff;
+  transform: rotate(-180deg);
+}
+
+.submenu .submenu-item {
+  width: 100%;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.submenu .submenu-link {
+  display: block;
+  padding: 12px 24px;
+  width: 100%;
+  position: relative;
+  color: #ffffff; /* Cambia el color del texto para que contraste con el fondo */
+  text-align: left; /* Alinea el texto del enlace a la izquierda */
+  transition: background-color 0.3s ease;
+  background-color: transparent; /* Fondo por defecto de las opciones del submenú */
+}
+
+.submenu .submenu-link:hover {
+  background-color: #1076e2; /* Fondo sólido al pasar el mouse */
+  color: #ffffff; /* Color del texto al pasar el mouse */
+}
+
+
+
+/*Fin del menu */
+
+
+
+
+
+#titulo {
+  background-color: #5a9ecc;  
+  color: white;               
+  padding: 20px;              
+  text-align: center;         
+  border-radius: 19px;       
+  font-size: 2em;             
+}
+
+
+h1{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 24px;
+
+}
+
+
+
+
+.nuevoEstilo{
+  color: rgb(18, 69, 236);
+  font-size: 33px;
+
+}
+video{
+  display: block;
+  margin: 0 auto;  
+  width: 500px;    
+}
+audio{
+  display: block;
+  margin: 0 auto;  
+  width: 500px;    
+}
+
+
+
+
+ 
+
+
+
+
+
+
+p{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 27px;
+
+}
+
+
+
+
